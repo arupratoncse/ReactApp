@@ -45,6 +45,7 @@ class Title extends Component{
                 <div className="Title">
                     <input
                         className="form-control"
+                        autoFocus
                         onChange={(event) => this.inputChange(event)}
                         onKeyPress={event => this.keyPressHandler(event)}
                         onBlur={event => this.blurHandler(event)}
@@ -57,7 +58,7 @@ class Title extends Component{
                 <div className="d-flex Title">
                     <h1 className="display-4">{ this.state.title }</h1>
                     <span onClick={() => this.editHandler()} className="ml-auto edit-icon">
-                        <button className="btn btn-outline-secondary">Edit</button>
+                        <i className="fas fa-pencil-alt"></i>
                     </span>
                 </div>
             )
